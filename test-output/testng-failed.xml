@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DifferentWaysToPost.CreateProjectWithJsonFile">
+      <class name="ReqresWithoutBDD.GetSingleUser">
         <methods>
-          <include name="createProject"/>
+          <include name="signleUser"/>
         </methods>
-      </class> <!-- DifferentWaysToPost.CreateProjectWithJsonFile -->
+      </class> <!-- ReqresWithoutBDD.GetSingleUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
