@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CRUDwithBDD.GetSingleProject">
+      <class name="DifferentWaysToPost.CreateProjectWithJsonFile">
         <methods>
-          <include name="getSingleProject"/>
+          <include name="createProject"/>
         </methods>
-      </class> <!-- CRUDwithBDD.GetSingleProject -->
+      </class> <!-- DifferentWaysToPost.CreateProjectWithJsonFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
