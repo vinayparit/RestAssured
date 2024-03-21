@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-21T12:07:28 IST" name="Default suite" finished-at="2024-03-21T12:07:31 IST" duration-ms="2299">
+  <suite started-at="2024-03-21T12:44:11 IST" name="Default suite" finished-at="2024-03-21T12:44:14 IST" duration-ms="2431">
     <groups>
     </groups>
-    <test started-at="2024-03-21T12:07:28 IST" name="Default test" finished-at="2024-03-21T12:07:31 IST" duration-ms="2299">
-      <class name="CRUDwithoutBDD.DeleteProject">
-        <test-method signature="deleteProject()[pri:0, instance:CRUDwithoutBDD.DeleteProject@71d44a3]" started-at="2024-03-21T12:07:28 IST" name="deleteProject" finished-at="2024-03-21T12:07:31 IST" duration-ms="2222" status="PASS">
+    <test started-at="2024-03-21T12:44:11 IST" name="Default test" finished-at="2024-03-21T12:44:14 IST" duration-ms="2431">
+      <class name="CRUDwithBDD.DeleteProject">
+        <test-method signature="deleteProject()[pri:0, instance:CRUDwithBDD.DeleteProject@71d44a3]" started-at="2024-03-21T12:44:11 IST" name="deleteProject" finished-at="2024-03-21T12:44:14 IST" duration-ms="2362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProject -->
-      </class> <!-- CRUDwithoutBDD.DeleteProject -->
+      </class> <!-- CRUDwithBDD.DeleteProject -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
