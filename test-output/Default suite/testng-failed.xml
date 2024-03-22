@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ReqresWithoutBDD.GetSingleUser">
+      <class name="Validation.ResponseTime">
         <methods>
-          <include name="signleUser"/>
+          <include name="responseTime"/>
         </methods>
-      </class> <!-- ReqresWithoutBDD.GetSingleUser -->
+      </class> <!-- Validation.ResponseTime -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

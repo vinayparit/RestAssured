@@ -23,12 +23,12 @@ public class CreateProject {
 		js.put("status", "Completed");
 		js.put("teamSize", 20);
 		
-		baseURI="http://rmgtestingserver:";
+		baseURI="http://rmgtestingserver";
 		port=8084;
 		
 		given().body(js).contentType(ContentType.JSON)
 		
-		.when().post(baseURI+port+"/addProject")
+		.when().post("/addProject")
 		
 		.then().assertThat().statusCode(201).contentType(ContentType.JSON).log().all();
 		
