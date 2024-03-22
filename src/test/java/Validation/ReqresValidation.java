@@ -40,10 +40,9 @@ public class ReqresValidation {
 			if(email.equals(expdata)) {
 				flag=true;
 			}
-			
-			assertTrue(flag);
-			System.out.println("data is present");
 		}
+		assertTrue(flag);
+		System.out.println("data is present");
 	}
 
 }

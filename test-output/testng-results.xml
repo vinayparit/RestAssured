@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-21T17:41:20 IST" name="Default suite" finished-at="2024-03-21T17:41:23 IST" duration-ms="2535">
+  <suite started-at="2024-03-22T09:16:18 IST" name="Default suite" finished-at="2024-03-22T09:16:22 IST" duration-ms="4501">
     <groups>
     </groups>
-    <test started-at="2024-03-21T17:41:20 IST" name="Default test" finished-at="2024-03-21T17:41:23 IST" duration-ms="2535">
-      <class name="Validation.ResponseTime">
-        <test-method signature="responseTime()[pri:0, instance:Validation.ResponseTime@59474f18]" started-at="2024-03-21T17:41:20 IST" name="responseTime" finished-at="2024-03-21T17:41:23 IST" duration-ms="2463" status="PASS">
+    <test started-at="2024-03-22T09:16:18 IST" name="Default test" finished-at="2024-03-22T09:16:22 IST" duration-ms="4501">
+      <class name="Validation.ReqresValidation">
+        <test-method signature="validateDynamicResponse()[pri:0, instance:Validation.ReqresValidation@34123d65]" started-at="2024-03-22T09:16:18 IST" name="validateDynamicResponse" finished-at="2024-03-22T09:16:22 IST" duration-ms="4069" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- responseTime -->
-      </class> <!-- Validation.ResponseTime -->
+        </test-method> <!-- validateDynamicResponse -->
+        <test-method signature="validateStaticResponse()[pri:0, instance:Validation.ReqresValidation@34123d65]" started-at="2024-03-22T09:16:22 IST" name="validateStaticResponse" finished-at="2024-03-22T09:16:22 IST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStaticResponse -->
+      </class> <!-- Validation.ReqresValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
