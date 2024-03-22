@@ -13,13 +13,13 @@ public class DataProviderTest {
 
 	@DataProvider
 	public Object[][] data() {
-		Object[][] obj = new Object[3][4];
+		Object[][] obj = new Object[4][4];
 
 		obj[0][0] = "Virat";
 		obj[0][1] = "RCB";
 		obj[0][2] = "Cricket";
 		obj[0][3] = 57;
-
+	
 		obj[1][0] = "Pankaj Advani";
 		obj[1][1] = "IND";
 		obj[1][2] = "Snooker";
@@ -30,6 +30,10 @@ public class DataProviderTest {
 		obj[2][2] = "Owner";
 		obj[2][3] = 99;
 
+		obj[3][0] = "Virat";
+		obj[3][1] = "RCB";
+		obj[3][2] = "Cricket";
+		obj[3][3] = 57;
 		return obj;
 	}
 
