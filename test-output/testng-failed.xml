@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Validation.ResponseTime">
+      <class name="Dataprovider.DataProviderTest">
         <methods>
-          <include name="responseTime"/>
+          <include name="createProject" invocation-numbers="2"/>
         </methods>
-      </class> <!-- Validation.ResponseTime -->
+      </class> <!-- Dataprovider.DataProviderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
