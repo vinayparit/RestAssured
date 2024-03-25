@@ -19,7 +19,7 @@ public class DataBaseUtility {
 	public void connectToDataBase() throws SQLException {
 		Driver driver = new Driver();
 		DriverManager.registerDriver(driver);
-		DriverManager.getConnection("jdbc:mysql://localhost:3306/sdet54", "root", "root");
+		DriverManager.getConnection("jdbc:mysql://rmgtestingserver:3333/projects", "root@%", "root");
 	}
 
 	/*

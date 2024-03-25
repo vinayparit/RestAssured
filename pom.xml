@@ -25,7 +25,28 @@
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>5.4.0</version>
-			
+
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.28</version>
 		</dependency>
 
 		<!--
@@ -53,23 +74,6 @@
 		</dependency>
 
 
-		<!--
-		https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
-		<dependency>
-			<groupId>com.github.scribejava</groupId>
-			<artifactId>scribejava-apis</artifactId>
-			<version>8.3.1</version>
-			<scope>runtime</scope>
-		</dependency>
-
-		<!--
-		https://mvnrepository.com/artifact/com.github.java-json-tools/json-schema-validator -->
-		<dependency>
-			<groupId>com.github.java-json-tools</groupId>
-			<artifactId>json-schema-validator</artifactId>
-			<version>2.2.14</version>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
 		<dependency>
 			<groupId>org.hamcrest</groupId>
@@ -79,11 +83,6 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>TYSS</groupId>
-			<artifactId>Assignments</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 
 
