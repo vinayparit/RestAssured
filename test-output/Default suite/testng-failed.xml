@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SerialAndDeserial.ComplexSerial">
+      <class name="Dataprovider.DataProviderTest">
         <methods>
-          <include name="deserailArray"/>
+          <include name="createProject" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- SerialAndDeserial.ComplexSerial -->
+      </class> <!-- Dataprovider.DataProviderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
