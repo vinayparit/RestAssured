@@ -10,7 +10,7 @@ public class FileUtility {
 	
 	public String readDataFromPropertyFile(String key) throws IOException
 	{
-		FileInputStream fis=new FileInputStream(".\\src\\test\\resources\\CommonData.properties");
+		FileInputStream fis=new FileInputStream(".\\src\\test\\resources\\CommonData.json");
 		Properties pObj = new Properties();
 		pObj.load(fis);
 		
@@ -20,12 +20,12 @@ public class FileUtility {
 	
 	public String writeDataToPropertyFile(String Key,String val) throws IOException
 	{
-		FileInputStream fis=new FileInputStream(".\\src\\test\\resources\\CommonData.properties");
+		FileInputStream fis=new FileInputStream(".\\src\\test\\resources\\CommonData.json");
 		Properties pObj = new Properties();
 		pObj.load(fis);
 		
 		String value=(String) pObj.setProperty(Key, val);
-		FileOutputStream fos=new FileOutputStream(".\\src\\test\\resources\\CommonData.properties");
+		FileOutputStream fos=new FileOutputStream(".\\src\\test\\resources\\CommonData.json");
 		return value;
 	}
 }
