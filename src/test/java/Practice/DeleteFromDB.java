@@ -16,6 +16,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import com.mysql.cj.jdbc.Driver;
 
@@ -26,6 +27,7 @@ import io.restassured.response.Response;
 
 public class DeleteFromDB {
 
+	@Test
 	public void createProject() throws SQLException {
 		JavaUtility jLib = new JavaUtility();
 		int i = jLib.getRandomNum(500);
@@ -44,7 +46,7 @@ public class DeleteFromDB {
 		DriverManager.registerDriver(sdriver);
 		Connection con = DriverManager.getConnection("jdbc:mysql://rmgtestingserver:3333/projects", "root@%", "root");
 		Statement state = con.createStatement();
-		int result = state.executeUpdate("delete from project where project_name is +pName+;");
+		int result = state.executeUpdate("delete from project where project_name is "+pName+";");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
