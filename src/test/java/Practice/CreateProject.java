@@ -18,9 +18,8 @@ import org.testng.annotations.Test;
 import com.mysql.cj.jdbc.Driver;
 
 import Generic.JavaUtility;
-import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.*;
+import io.restassured.response.Response;
 import static org.testng.Assert.assertTrue;
 
 public class CreateProject {
@@ -77,6 +76,9 @@ public class CreateProject {
 				System.out.println("Data Present in DataBase");
 			}
 		}
+		baseURI="http://rmgtestingserver";
+		port=8084;
+		when().get("/projects/");
 		con.close();
 	}
 

@@ -13,12 +13,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import Generic.EndPoints;
 import Generic.JavaUtility;
+import Generic.SpecificationBuildersBaseClass;
 import Pojo.PojoClass;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class VerifyInUI {
+public class VerifyInUI extends SpecificationBuildersBaseClass {
 
 	@Test
 	public void createProject() {
@@ -26,14 +28,14 @@ public class VerifyInUI {
 		int i = jLib.getRandomNum(500);
 		PojoClass pj = new PojoClass("Vinay", "OSA" + i, "Completed", 25);
 
-		baseURI = "http://rmgtestingserver";
-		port = 8084;
+//		baseURI = "http://rmgtestingserver";
+//		port = 8084;
 
-		Response resp = given().body(pj).contentType(ContentType.JSON)
+		Response resp = given().spec(requestSpec).body(pj)
 
-				.when().post("/addProject");
+				.when().post(EndPoints.project_addProject);
 		String pName = resp.jsonPath().get("projectName");
-		resp.then().assertThat().statusCode(201).log().all();
+		resp.then().spec(responseSpec).assertThat().log().all();
 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();

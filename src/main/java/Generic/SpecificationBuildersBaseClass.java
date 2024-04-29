@@ -38,6 +38,7 @@ public class SpecificationBuildersBaseClass {
 		//This is common content type for all the post request as response
 		builder1.expectContentType(ContentType.JSON);
 		
+		
 		 
 		 responseSpec = builder1.build();
 	}

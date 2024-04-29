@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice.DeleteFromDB">
+      <class name="shopperStack.RegisterShopper">
         <methods>
-          <include name="createProject"/>
+          <include name="registerShopper"/>
         </methods>
-      </class> <!-- Practice.DeleteFromDB -->
+      </class> <!-- shopperStack.RegisterShopper -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

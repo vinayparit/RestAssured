@@ -26,8 +26,4 @@ public class OAuth2 {
 		.then().log().all();
 
 	}
-	
-	
-		
-	
 }
